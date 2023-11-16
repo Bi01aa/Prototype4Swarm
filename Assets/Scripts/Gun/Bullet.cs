@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemyComponent))
         {
             enemyComponent.TakeDamage(1);
-            Debug.Log("Damage dealt");
+            
         }
     }
 }
