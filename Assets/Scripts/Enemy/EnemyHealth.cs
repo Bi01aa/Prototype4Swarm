@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] float health, maxHealth = 3f;
 
-   
+    KillCounter killCounterScript;
 
     [SerializeField] FloatingHealthBar healthBar;
 
@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour
     {
         health = maxHealth;
         healthBar.UpdateHealthBar(health, maxHealth);
-        
+        killCounterScript = GameObject.Find("KCO").GetComponent<KillCounter>();
     }
 
   
@@ -38,6 +38,7 @@ public class EnemyHealth : MonoBehaviour
         if (health < 0)
         {
             Destroy(gameObject);
+            killCounterScript.AddKill();
         }
     }
 }
