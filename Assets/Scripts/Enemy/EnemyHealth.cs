@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    [SerializeField] protected bool isDead;
 
     [SerializeField] float health, maxHealth = 3f;
 
@@ -26,7 +27,10 @@ public class EnemyHealth : MonoBehaviour
         killCounterScript = GameObject.Find("KCO").GetComponent<KillCounter>();
     }
 
-  
+  public bool IsDead()
+    {
+        return isDead;
+    }
 
   
 
