@@ -19,6 +19,8 @@ public class Spawner : MonoBehaviour
 
     [SerializeField] private Transform[] spawners;
     [SerializeField] private List<EnemyHealth> enemyList;
+
+    public GameManagerScript GameManagerScript;
     
 
  
@@ -29,6 +31,7 @@ public class Spawner : MonoBehaviour
     {
         waveCountdown = timeBetweenWaves;
         currentWave = 0;
+        
     }
 
     private void Update()
@@ -106,6 +109,9 @@ public class Spawner : MonoBehaviour
         {
             currentWave = 0;
             Debug.Log("COMPLETED ALL WAVES");
+            GameManagerScript.gameFinished();
+            
+            
         }
         else
         {

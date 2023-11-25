@@ -6,13 +6,19 @@ using UnityEngine.SceneManagement;
 public class GameManagerScript : MonoBehaviour
 {
     public GameObject gameOverUI;
+    public GameObject gameFinishedUI;
 
-  
 
-  
+
+
     public void gameOver()
     {
         gameOverUI.SetActive(true);
+    }
+
+    public void gameFinished()
+    {
+        gameFinishedUI.SetActive(true);
     }
 
     public void Restart()

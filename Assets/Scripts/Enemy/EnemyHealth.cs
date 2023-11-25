@@ -43,6 +43,7 @@ public class EnemyHealth : MonoBehaviour
         {
             Destroy(gameObject);
             killCounterScript.AddKill();
+            isDead = true;
         }
     }
 }
