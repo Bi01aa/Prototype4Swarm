@@ -2026,11 +2026,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - name: Wave1
-    enemiesAmount: 1
+    enemiesAmount: 5
     delay: 1
     enemy: {fileID: 6760109709595334003, guid: b3531458b26f8e44cb84be694229e557, type: 3}
   - name: Wave2
-    enemiesAmount: 2
+    enemiesAmount: 10
+    delay: 1
+    enemy: {fileID: 6760109709595334003, guid: b3531458b26f8e44cb84be694229e557, type: 3}
+  - name: Wave3
+    enemiesAmount: 15
+    delay: 1
+    enemy: {fileID: 6760109709595334003, guid: b3531458b26f8e44cb84be694229e557, type: 3}
+  - name: Wave4
+    enemiesAmount: 20
+    delay: 1
+    enemy: {fileID: 6760109709595334003, guid: b3531458b26f8e44cb84be694229e557, type: 3}
+  - name: Wave5
+    enemiesAmount: 25
     delay: 1
     enemy: {fileID: 6760109709595334003, guid: b3531458b26f8e44cb84be694229e557, type: 3}
   timeBetweenWaves: 3
